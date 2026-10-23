@@ -1,0 +1,7 @@
+-- TEMPLATE Flink SQL: revisar/adaptar conforme a conta, o tópico e o formato.
+-- Não execute antes de confirmar nomes de tópico, schema e envelope CDC.
+-- A tabela de entrada deve representar o payload de transação já normalizado.
+-- Exemplo de campos lógicos esperados:
+-- transaction_id BIGINT, account_id INT, card_id INT, merchant_id INT,
+-- amount DECIMAL(15,2), currency STRING, transaction_status STRING,
+-- transaction_time TIMESTAMP(3), WATERMARK FOR transaction_time AS ...

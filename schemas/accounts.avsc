@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "PaymentAccount",
+  "namespace": "com.bootcamp.payments",
+  "fields": [
+    {"name": "account_id", "type": "int"},
+    {"name": "customer_id", "type": "int"},
+    {"name": "account_status", "type": "string", "default": "ACTIVE"}
+  ]
+}

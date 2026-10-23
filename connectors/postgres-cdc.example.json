@@ -1,0 +1,20 @@
+{
+  "name": "payments-postgres-cdc",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "${file:/secrets/db.properties:hostname}",
+    "database.port": "5432",
+    "database.user": "${file:/secrets/db.properties:username}",
+    "database.password": "${file:/secrets/db.properties:password}",
+    "database.dbname": "payments",
+    "topic.prefix": "payments",
+    "plugin.name": "pgoutput",
+    "slot.name": "payments_cdc_slot",
+    "publication.name": "payments_publication",
+    "publication.autocreate.mode": "disabled",
+    "table.include.list": "public.customers,public.accounts,public.cards,public.merchants,public.transactions",
+    "snapshot.mode": "initial",
+    "heartbeat.interval.ms": "60000",
+    "tombstones.on.delete": "true"
+  }
+}

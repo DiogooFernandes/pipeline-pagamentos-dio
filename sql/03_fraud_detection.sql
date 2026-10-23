@@ -1,0 +1,8 @@
+-- REGRA DE NEGÓCIO
+-- Emitir alerta quando houver pelo menos 3 transações do mesmo card_id
+-- em uma janela de 60 segundos.
+--
+-- Implemente com a sintaxe de Flink SQL suportada pela conta (por exemplo,
+-- janela de tempo ou MATCH_RECOGNIZE, conforme disponibilidade e semântica).
+-- Confirme como eventos atrasados, timestamps e duplicatas são tratados.
+-- Não considere este comentário uma consulta executável.

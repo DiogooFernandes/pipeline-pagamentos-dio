@@ -1,0 +1,4 @@
+-- TEMPLATE de enriquecimento:
+-- Associar cada transação aos dados da conta usando a chave account_id.
+-- Defina se o join é temporal ou entre tabelas de changelog conforme o source
+-- e o modelo de dados. Valide chave primária e semântica de atualização.
